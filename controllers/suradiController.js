@@ -15,9 +15,9 @@ router.get('/profile', function(req,res) {
     domisili: 'Yogya',
     universitas: 'UNY',
     jurusan: 'Teknik Mekatronika',
-    semester: 4
+    semester: 9
   }
-  res.send(datadiri)
+  res.send(datadiri);
 })
 
 module.exports = router;
