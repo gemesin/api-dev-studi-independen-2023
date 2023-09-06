@@ -5,13 +5,13 @@ router.get('/', (req, res) => {
   res.send('Hello nama saya Nazwa');
 });
 
-router.get('/pofile', (req,res) => {
+router.get('/profile', (req,res) => {
   res.send({
     namaLengkap : 'Nazwa Nurfadhilla Phitri',
     namaPanggilan : 'Nazwa',
     tempatLahir : 'Bekasi',
-    tanggalLahir : '6 Desember 2003',
-    umur : '19 Tahun',
+    tanggalLahir : '6-12-2003',
+    umur : '19',
     domisili : 'Bekasi',
     universitas : 'Universitas Negeri Padang',
     jurusan : 'Informatika',
