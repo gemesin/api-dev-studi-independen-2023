@@ -22,7 +22,7 @@ router.post('/profile', (req, res) => {
 });
 
 
-router.get('/simple-calculator', (req, res) => {
+router.post('/simple-calculator', (req, res) => {
     const operasi = req.body.operasi;
     const angka1 = req.body.angka1;
     const angka2 = req.body.angka2;
