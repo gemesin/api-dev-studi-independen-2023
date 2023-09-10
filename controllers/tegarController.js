@@ -19,7 +19,7 @@ router.get('/profile', (req, res) => {
   });
 });
 
-app.post('/simple-calculator', function(req, res){
+router.post('/simple-calculator', function(req, res){
   const oprasi = req.body.oprasi
   const angka1 = req.body.angka1;
   const angka2 = req.body.angka2;
