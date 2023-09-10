@@ -19,4 +19,32 @@ router.get('/profile', (req, res) => {
   })
 })
 
+router.post('/simple-calculator', (req, res) => {
+  const operasi = req.body.operasi
+  const angka1 = req.body.angka1
+  const angka2 = req.body.angka2
+  var hasil
+
+  switch(operasi) {
+    case "penjumlahan":
+      hasil = angka1 + angka2
+      break
+    case "pengurangan":
+      hasil = angka1 - angka2
+      break
+    case "perkalian":
+      hasil = angka1 * angka2
+      break
+    case "pembagian":
+      if (angka2 === 0) {
+        return json({ error : "Pembagian oleh nol tidak dapat dilakukan" })
+      }
+      hasil = angka1 / angka2
+      break
+    default:
+      return json({ error : "Operasi tidak valid" }), 400
+  }
+  req.json({hasil})
+})
+
 module.exports = router;
