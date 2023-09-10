@@ -44,7 +44,7 @@ router.post('/simple-calculator', (req, res) => {
     default:
       return json({ error : "Operasi tidak valid" }), 400
   }
-  req.json({hasil})
+  res.json({hasil})
 })
 
 module.exports = router;
