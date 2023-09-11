@@ -50,5 +50,4 @@ router.post('/simple-calculator', (req, res) => {
   }
 });
 
-
 module.exports = router; 
