@@ -73,7 +73,7 @@ app.use('/kalya', kalyaController);
 const ilhamController = require('./controllers/ilhamController');
 app.use('/ilham', ilhamController);
 
-const PORT = 3100;
+const PORT = 3900;
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
